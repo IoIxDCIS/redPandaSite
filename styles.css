@@ -1,13 +1,10 @@
 /* General Styles */
-* {
-    background-color: rgba(79, 121, 66, .5);
-
-}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgba(79, 121, 66, .5);
   }
   
   /* Navigation Styles */
