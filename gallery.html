@@ -3,6 +3,28 @@
 <head>
   <title>Red Panda Mascot - Image Gallery</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add some styles for the enlarged image */
+    .enlarged-image {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+      overflow: auto;
+    }
+    
+    .enlarged-image img {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      max-height: 90%;
+      margin-top: 10vh;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -20,18 +42,36 @@
     <h1>Red Panda Image Gallery</h1>
     
     <!-- Image Gallery -->
-    <div class="image-gallery">
+    <div class="gallery">
       <div class="gallery-item">
-        <img src="https://images.theconversation.com/files/317421/original/file-20200226-24651-1or3uxq.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" alt="Image 1">
+        <img src="https://images.theconversation.com/files/317421/original/file-20200226-24651-1or3uxq.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" alt="Image 1" onclick="enlargeImage(this.src)">
       </div>
       <div class="gallery-item">
-        <img src="https://www.jsonline.com/gcdn/presto/2019/07/24/PMJS/83822df7-657a-47be-930d-c48630c2a20c-Red_Panda_Baby_07-2019-4671_E.jpg?crop=6015,3384,x0,y0&width=3200&height=1801&format=pjpg&auto=webp" alt="Image 2">
+        <img src="https://www.jsonline.com/gcdn/presto/2019/07/24/PMJS/83822df7-657a-47be-930d-c48630c2a20c-Red_Panda_Baby_07-2019-4671_E.jpg?crop=6015,3384,x0,y0&width=3200&height=1801&format=pjpg&auto=webp" alt="Image 2" onclick="enlargeImage(this.src)">
       </div>
       <div class="gallery-item">
-        <img src="https://cnycentral.com/resources/media/62adb78c-4658-482f-bbf5-6c9982af18ca-babyredpandas731183.jpg" alt="Image 3">
+        <img src="https://cnycentral.com/resources/media/62adb78c-4658-482f-bbf5-6c9982af18ca-babyredpandas731183.jpg" alt="Image 3" onclick="enlargeImage(this.src)">
       </div>
       <!-- Add more images as needed -->
     </div>
+    
+    <!-- Enlarged Image Overlay -->
+    <div class="enlarged-image" onclick="closeEnlarged()"></div>
+  
   </div>
+
+  <script>
+    function enlargeImage(src) {
+      var enlargedImage = document.querySelector('.enlarged-image');
+      enlargedImage.innerHTML = '<img src="' + src + '">';
+      enlargedImage.style.display = 'block';
+    }
+
+    function closeEnlarged() {
+      var enlargedImage = document.querySelector('.enlarged-image');
+      enlargedImage.innerHTML = '';
+      enlargedImage.style.display = 'none';
+    }
+  </script>
 </body>
 </html>
