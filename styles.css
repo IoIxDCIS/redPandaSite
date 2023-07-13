@@ -1,4 +1,9 @@
 /* General Styles */
+* {
+    background-color: rgba(79, 121, 66, .5);
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
