@@ -68,6 +68,11 @@ body {
     margin-bottom: 20px;
   }
   
+  .hero-content p.centered {
+    text-align: center;
+    padding: 0 4%;
+  }
+  
   /* Gallery Styles */
   .gallery {
     display: grid;
