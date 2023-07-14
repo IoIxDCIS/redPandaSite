@@ -7,12 +7,13 @@ body {
   }
   
   /* Navigation Styles */
-  nav {
+nav {
+  background: #B75301;
+  color: #245a38;
+  padding: 15px;
+  box-shadow: -1px 11px 38px -13px rgba(0,0,0,0.75);
+}
 
-    background: #B75301;
-    color: #245a38;
-    padding: 15px;
-  }
   
   nav ul {
     list-style-type: none;
