@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(79, 121, 66, .5);
+    font-size: 18px;
   }
   
   /* Navigation Styles */
@@ -73,7 +74,7 @@ nav ul li a.active {
   }
   
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 10px;
   }
   
@@ -125,7 +126,7 @@ nav ul li a.active {
   }
   
   .page-content h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
     color: #252525;
   }
