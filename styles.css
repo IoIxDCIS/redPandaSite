@@ -4,30 +4,40 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(79, 121, 66, .5);
+    font-size: 18px;
   }
-  
-  /* Navigation Styles */
-  nav {
-    background: linear-gradient(to right, rgb(182, 244, 146), rgb(92, 177, 184));
-   color: black;
-    padding: 15px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: #245a38;
-    text-decoration: none;
-    padding: 5px 10px;
-  }
+
+/* Navigation Styles */
+nav {
+  background: #B75301;
+  color: #245a38;
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+nav ul li a.active {
+  color: #ffd700;
+}
 
   table {
     width: 100%;
@@ -43,7 +53,7 @@ body {
     width: 0;
     font-weight: bold;
   }
-  
+
   /* Hero Styles */
   .hero {
     position: relative;
@@ -65,7 +75,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.65;
+    box-shadow: -1px 11px 38px -13px rgba(0,0,0,0.75);
+    
   }
   
   .hero-content {
@@ -75,7 +87,7 @@ body {
   }
   
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 10px;
   }
   
@@ -101,16 +113,22 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    box-shadow: -1px 11px 38px -13px rgba(0,0,0,0.4);
   }
   
   /* Page Content Styles */
+
+  .about {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .page-content {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     background-color: beige;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 11px 38px -13px rgba(0,0,0,0.75);
     text-align: center; /* Center the content */
   }
   
@@ -121,7 +139,7 @@ body {
   }
   
   .page-content h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
     color: #252525;
   }
