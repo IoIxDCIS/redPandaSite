@@ -28,6 +28,21 @@ body {
     text-decoration: none;
     padding: 5px 10px;
   }
+
+  table {
+    width: 100%;
+  }
+  table td {
+    background: rgb(220, 220, 191);
+    margin: 0;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: left;
+  }
+  table td.left {
+    width: 0;
+    font-weight: bold;
+  }
   
   /* Hero Styles */
   .hero {
