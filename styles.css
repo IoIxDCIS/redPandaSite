@@ -8,8 +8,9 @@ body {
   
   /* Navigation Styles */
   nav {
-    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
-   color: #245a38;
+
+    background: #B75301;
+    color: #245a38;
     padding: 15px;
   }
   
@@ -24,7 +25,7 @@ body {
   }
   
   nav ul li a {
-    color: #245a38;
+    color: white;
     text-decoration: none;
     padding: 5px 10px;
   }
