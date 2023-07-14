@@ -6,8 +6,7 @@ body {
     background-color: rgba(79, 121, 66, .5);
     font-size: 18px;
   }
-  
-  /* Navigation Styles */
+
 /* Navigation Styles */
 nav {
   background: #B75301;
@@ -40,7 +39,21 @@ nav ul li a.active {
   color: #ffd700;
 }
 
-  
+  table {
+    width: 100%;
+  }
+  table td {
+    background: rgb(220, 220, 191);
+    margin: 0;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: left;
+  }
+  table td.left {
+    width: 0;
+    font-weight: bold;
+  }
+
   /* Hero Styles */
   .hero {
     position: relative;
