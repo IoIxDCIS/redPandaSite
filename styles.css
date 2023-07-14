@@ -90,6 +90,7 @@ nav {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    box-shadow: -1px 11px 38px -13px rgba(0,0,0,0.4);
   }
   
   /* Page Content Styles */
