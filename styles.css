@@ -7,33 +7,38 @@ body {
   }
   
   /* Navigation Styles */
+/* Navigation Styles */
 nav {
   background: #B75301;
   color: #245a38;
   padding: 15px;
-  box-shadow: -1px 11px 38px -13px rgba(0,0,0,0.75);
 }
 
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  nav ul li a:hover {
-    color: #ffd700; /* Change the text color on hover */
-  }
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+nav ul li a.active {
+  color: #ffd700;
+}
+
   
   /* Hero Styles */
   .hero {
